@@ -34,7 +34,6 @@ printData(4);
 
 console.log('------ immutable objects ------');
 
-
 const trek = Object.freeze({name: 'Trek', age: 2});
 
 trek.age = 3; // Blows up
