@@ -1,0 +1,19 @@
+{
+  "name": "rediscovering-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arguments.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashanth-g/rediscovering-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prashanth-g/rediscovering-javascript/issues"
+  },
+  "homepage": "https://github.com/prashanth-g/rediscovering-javascript#readme"
+}
