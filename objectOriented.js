@@ -38,3 +38,15 @@ console.log(newCar);
 newCar.color = 'red';
 console.log(newCar);
 
+console.log('---- Statics ----');
+
+class Machine {
+    static info() {
+        console.log('INFO');
+    }    
+}
+
+Machine.info();
+const machine = new Machine();
+
+// machine.info(); -> Blows up
