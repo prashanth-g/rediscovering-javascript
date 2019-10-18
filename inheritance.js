@@ -40,3 +40,32 @@ console.log(car1.miles);
 car1.drive(10);
 console.log(car1.miles);
 console.log(car2.miles);
+
+console.log('---- New Way ----');
+
+class Person {
+    constructor(first, last) {
+        this.first = first;
+        this.last = last;
+    }
+
+    toString() {
+        return `${this.first} ${this.last}`;
+    }
+}
+
+class CoolPerson extends Person {
+    constructor(first, last, index) {
+        super(first, last);
+        this.index = index;
+    }
+
+    toString() {
+        return `${super.toString()} ${this.index}`;
+    }
+}
+
+const alan = new CoolPerson('alan', 'turing', 100);
+
+console.log(alan);
+console.log(Object.getPrototypeOf(Object.getPrototypeOf(alan)));
