@@ -23,3 +23,20 @@ const truck = {
 Object.setPrototypeOf(car, truck);
 
 use(car);
+
+const Car = function() {
+    this.drive = function(distance) {
+        this.miles = distance;
+    }
+}
+
+Car.prototype.miles = 0;
+
+const car1 = new Car();
+const car2 = new Car();
+
+console.log(car1.miles);
+
+car1.drive(10);
+console.log(car1.miles);
+console.log(car2.miles);
